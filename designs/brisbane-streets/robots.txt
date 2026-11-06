@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /designs/
 Sitemap: https://brisbanestreets.online/sitemap.xml

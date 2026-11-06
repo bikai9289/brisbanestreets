@@ -29,6 +29,21 @@ with sync_playwright() as pw:
     page = browser.new_page()
     page.on('pageerror', lambda error: report['runtimeErrors'].append(str(error)))
     page.on('response', lambda response: report['failedLocalRequests'].append(response.url) if response.url.startswith(BASE) and response.status >= 400 else None)
+    page.goto(BASE+'/')
+    assert page.locator('h1').text_content() == 'Brisbane Streets Game', 'Homepage H1 must be clean plain text'
+    graph = page.locator('script[type="application/ld+json"]').evaluate('(e) => JSON.parse(e.textContent)["@graph"]')
+    assert graph, 'Homepage must describe the game separately from the guide'
+    game = next(node for node in graph if node['@type'] == 'VideoGame')
+    guide = next(node for node in graph if node['@type'] == 'WebPage')
+    assert game['url'] == 'https://brisbane-streets.pages.dev/'
+    assert game['author']['name'] == 'SohybQS' and game['isAccessibleForFree'] is True
+    assert guide['about']['@id'] == game['@id']
+    assert game['author']['name'] in page.locator('main').text_content()
+    assert 'aggregateRating' not in game and 'screenshot' not in game
+    page.goto(BASE+'/unblocked/')
+    for value in [page.title(), page.locator('h1').text_content(), page.locator('meta[name="description"]').get_attribute('content')]:
+        assert 'unblocked' in value.lower(), value
+    assert 'cannot remove network restrictions' in page.locator('main').text_content()
     for width in [1440, 768, 390, 320]:
         page.set_viewport_size({'width': width, 'height': 1000})
         for route in ROUTES:

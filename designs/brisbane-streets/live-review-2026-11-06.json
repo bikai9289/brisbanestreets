@@ -1,0 +1,180 @@
+[
+  {
+    "path": "/",
+    "final": "https://brisbanestreets.online/",
+    "chain": [
+      {
+        "url": "https://brisbanestreets.online/",
+        "status": 200
+      }
+    ],
+    "robots": null
+  },
+  {
+    "path": "/controls/",
+    "final": "https://brisbanestreets.online/controls/",
+    "chain": [
+      {
+        "url": "https://brisbanestreets.online/controls/",
+        "status": 200
+      }
+    ],
+    "robots": null
+  },
+  {
+    "path": "/unblocked/",
+    "final": "https://brisbanestreets.online/unblocked/",
+    "chain": [
+      {
+        "url": "https://brisbanestreets.online/unblocked/",
+        "status": 200
+      }
+    ],
+    "robots": null
+  },
+  {
+    "path": "/about/",
+    "final": "https://brisbanestreets.online/about/",
+    "chain": [
+      {
+        "url": "https://brisbanestreets.online/about/",
+        "status": 200
+      }
+    ],
+    "robots": null
+  },
+  {
+    "path": "/privacy/",
+    "final": "https://brisbanestreets.online/privacy/",
+    "chain": [
+      {
+        "url": "https://brisbanestreets.online/privacy/",
+        "status": 200
+      }
+    ],
+    "robots": null
+  },
+  {
+    "path": "/robots.txt",
+    "final": "https://brisbanestreets.online/robots.txt",
+    "chain": [
+      {
+        "url": "https://brisbanestreets.online/robots.txt",
+        "status": 200
+      }
+    ],
+    "robots": null
+  },
+  {
+    "path": "/sitemap.xml",
+    "final": "https://brisbanestreets.online/sitemap.xml",
+    "chain": [
+      {
+        "url": "https://brisbanestreets.online/sitemap.xml",
+        "status": 200
+      }
+    ],
+    "robots": null
+  },
+  {
+    "path": "/characters",
+    "final": "https://brisbanestreets.online/",
+    "chain": [
+      {
+        "url": "https://brisbanestreets.online/characters",
+        "status": 301
+      },
+      {
+        "url": "https://brisbanestreets.online/",
+        "status": 200
+      }
+    ],
+    "robots": null
+  },
+  {
+    "path": "/characters/",
+    "final": "https://brisbanestreets.online/",
+    "chain": [
+      {
+        "url": "https://brisbanestreets.online/characters/",
+        "status": 301
+      },
+      {
+        "url": "https://brisbanestreets.online/",
+        "status": 200
+      }
+    ],
+    "robots": null
+  },
+  {
+    "path": "/how-to-play",
+    "final": "https://brisbanestreets.online/controls/",
+    "chain": [
+      {
+        "url": "https://brisbanestreets.online/how-to-play",
+        "status": 301
+      },
+      {
+        "url": "https://brisbanestreets.online/controls/",
+        "status": 200
+      }
+    ],
+    "robots": null
+  },
+  {
+    "path": "/how-to-play/",
+    "final": "https://brisbanestreets.online/controls/",
+    "chain": [
+      {
+        "url": "https://brisbanestreets.online/how-to-play/",
+        "status": 301
+      },
+      {
+        "url": "https://brisbanestreets.online/controls/",
+        "status": 200
+      }
+    ],
+    "robots": null
+  },
+  {
+    "path": "/where-to-play",
+    "final": "https://brisbanestreets.online/unblocked/",
+    "chain": [
+      {
+        "url": "https://brisbanestreets.online/where-to-play",
+        "status": 301
+      },
+      {
+        "url": "https://brisbanestreets.online/unblocked/",
+        "status": 200
+      }
+    ],
+    "robots": null
+  },
+  {
+    "path": "/where-to-play/",
+    "final": "https://brisbanestreets.online/unblocked/",
+    "chain": [
+      {
+        "url": "https://brisbanestreets.online/where-to-play/",
+        "status": 301
+      },
+      {
+        "url": "https://brisbanestreets.online/unblocked/",
+        "status": 200
+      }
+    ],
+    "robots": null
+  },
+  {
+    "path": "/missing-release-check-20261106",
+    "final": "https://brisbanestreets.online/missing-release-check-20261106",
+    "chain": [
+      {
+        "url": "https://brisbanestreets.online/missing-release-check-20261106",
+        "status": 404
+      }
+    ],
+    "robots": "noindex,follow"
+  }
+]
