@@ -1,0 +1,9 @@
+dist/
+releases/
+__pycache__/
+designs/brisbane-streets/preview-*.png
+designs/brisbane-streets/verification.json
+designs/brisbane-streets/review-report.md
+designs/brisbane-streets/_d_meta.json
+.env
+.env.*
