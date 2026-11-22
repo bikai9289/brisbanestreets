@@ -22,7 +22,7 @@ class LocalPage(HTMLParser):
 P = Path(__file__).resolve().parent
 ROOT = P.parents[1]
 BASE = 'http://127.0.0.1:4311'
-ROUTES = ['/', '/controls/', '/unblocked/', '/about/', '/contact/', '/privacy/']
+ROUTES = ['/', '/controls/', '/missions/', '/map/', '/unblocked/', '/about/', '/contact/', '/privacy/']
 report = {'pages': [], 'runtimeErrors': [], 'failedLocalRequests': []}
 with sync_playwright() as pw:
     browser = pw.chromium.launch(executable_path=r'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe', headless=True)
