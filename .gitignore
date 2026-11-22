@@ -1,4 +1,5 @@
 dist/
+.wrangler/
 releases/
 __pycache__/
 designs/brisbane-streets/preview-*.png
